@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "663547569112",
+    "project_id": "rafe-my-note",
+    "storage_bucket": "rafe-my-note.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663547569112:android:e03542728fa80ec7dbc8ad",
+        "android_client_info": {
+          "package_name": "app.vercel.flutterSite.mynotes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663547569112-ffemrn6nttli33e9hbrffg6o1r7i469k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsMZZJvwjQcWK6cRCuxuc6HCN6tj0LDS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663547569112-ffemrn6nttli33e9hbrffg6o1r7i469k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>481295025516-mnf0oafc4vs2ep0qvbub2ih3a54jla86.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.481295025516-mnf0oafc4vs2ep0qvbub2ih3a54jla86</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAA5m54vMeAy27PetDH30GLz6CUEbjQxLg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>481295025516</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>app.vercel.flutterSite.mynotes</string>
+	<key>PROJECT_ID</key>
+	<string>rafe-mynote</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rafe-mynote.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:481295025516:ios:7e1566207542ba720d1f49</string>
+</dict>
+</plist>
