@@ -10,7 +10,7 @@ import 'firebase_options.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
+    // debugShowCheckedModeBanner: false,
     title: 'Flutter Demo',
     theme: ThemeData(
       primarySwatch: Colors.blue,
@@ -26,13 +26,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Home Page"),
-        centerTitle: true,
-        titleTextStyle: const TextStyle(
-          fontWeight: FontWeight.bold,
-          fontSize: 24
-        )
-      ),
+          title: const Text("Home Page"),
+          centerTitle: true,
+          titleTextStyle:
+              const TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
       body: FutureBuilder(
         future: Firebase.initializeApp(
           options: DefaultFirebaseOptions.currentPlatform,
@@ -43,24 +40,35 @@ class HomePage extends StatelessWidget {
               final user = FirebaseAuth.instance.currentUser;
               final emailVerified = user?.emailVerified ?? false;
               if (emailVerified) {
-                print("You are verified");
               } else {
-                print("You need to verify");
-              }
-              return const Center(
-                child: Text(
-                  "Done...",
-                  style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 24
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (builder) => const VerifyEmailView()
                   ),
-                )
-              );
+                );
+              }
+              return const Text("Done...");
             default:
-              return const Center(child: Text("Loading..."));
+              return const Text("Loading...");
           }
         },
       ),
+    );
+  }
+}
+
+class VerifyEmailView extends StatefulWidget {
+  const VerifyEmailView({super.key});
+
+  @override
+  State<VerifyEmailView> createState() => _VerifyEmailViewState();
+}
+
+class _VerifyEmailViewState extends State<VerifyEmailView> {
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Text("apple"),
     );
   }
 }
